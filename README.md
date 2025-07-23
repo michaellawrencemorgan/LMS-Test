@@ -9,37 +9,28 @@ Built with FastAPI, it provides:
 
 🚀 Setup Instructions
 1. Clone this repository
-bash
-Copy
-Edit
-git clone https://github.com/your-org/immersive_lms.git
-cd immersive_lms
+
+git clone https://github.com/michaellawrencemorgan/LMS-Test.git
+cd LMS-Test
+
 2. Install dependencies
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
+
 3. Create your .env file
-In the project root:
+In the project root, add:
 
-ini
-Copy
-Edit
 OPENAI_API_KEY=your-openai-key-here
-🏃‍♂️ Run the Backend Server
-bash
-Copy
-Edit
-uvicorn main:app --reload
-Visit: http://localhost:8000/docs for interactive API testing via Swagger UI.
 
-🧪 Example API Usage
+4. 🏃‍♂️ Run the Backend Server
+
+uvicorn main:app --reload
+Visit: http://localhost:8000/docs to interact with the API via Swagger UI.
+
+5. 🧪 Example API Usage
 GET /courses
 Returns structured modules like this:
 
-json
-Copy
-Edit
 [
   {
     "course_id": "prophetic_matrix",
@@ -59,9 +50,6 @@ Edit
 POST /chat
 Request:
 
-json
-Copy
-Edit
 {
   "prompt": "What does it mean to walk by faith?"
 }
@@ -73,7 +61,8 @@ Edit
 {
   "reply": "To walk by faith means to trust in divine guidance beyond visible evidence..."
 }
-📦 Tech Stack
+
+6. 📦 Tech Stack
 FastAPI – Web API framework
 
 OpenAI – GPT-4 conversational intelligence
@@ -82,7 +71,7 @@ dotenv – Secure API key loading
 
 uvicorn – ASGI server for local dev
 
-✅ Roadmap Ideas
+7. ✅ Roadmap Ideas
 Add user authentication
 
 Expand course content structure
